@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    {#<link rel="icon" type="image/png" href="assets/img/favicon.ico">#}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Questionnaire NBA</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="{{ asset('bundles/css/style.css') }}" rel="stylesheet" />
+</head>
+<body style="background-image: url({{ asset('bundles/img/fond.jpg') }});">
+<div class="container">
+    <form id="quiz" action="{{ path('quizz_result') }}" method="post">
+        <h3>Quiz NBA</h3>
+        <h4>Ce questionnaire est sur la NBA en général</h4>
+        <label>1. Qui était le premier choix de la draft en 1994 ?</label>
+        <ol>
+            <ol>
+                <input name="q1" type="radio" value="1" required> Eric Montross
+                <br>
+                <input name="q1" type="radio" value="2"> Glenn Robinson
+                <br>
+                <input name="q1" type="radio" value="3"> Jason Kidd
+                <br>
+                <input name="q1" type="radio" value="4"> Grant Hill
+            </ol>
+        </ol>
+        <hr>
+        <label>2. Dans quelle ville jouent les Golden State Warriors ?</label>
+        <ol>
+            <ol>
+                <input name="q2" type="radio" value="1" required> San Diego
+                <br>
+                <input name="q2" type="radio" value="2"> San José
+                <br>
+                <input name="q2" type="radio" value="3"> Oakland
+                <br>
+                <input name="q2" type="radio" value="4"> Santa Cruz
+            </ol>
+        </ol>
+        <hr>
+        <label>3. Qui est le seul joueur blanc à avoir gagné le Slam Dunk Contest ?</label>
+        <ol>
+            <ol>
+                <input name="q3" type="radio" value="1" required> Rex Chapman
+                <br>
+                <input name="q3" type="radio" value="2"> Tom Chambers
+                <br>
+                <input name="q3" type="radio" value="3"> Dan Majerle
+                <br>
+                <input name="q3" type="radio" value="4"> Brent Barry
+            </ol>
+        </ol>
+        <hr>
+        <label>4. Quel joueur a remporté‚le plus grand nombre de titres NBA ?</label>
+        <ol>
+            <ol>
+                <input name="q4" type="radio" value="1" required> Wilt Chamberlain
+                <br>
+                <input name="q4" type="radio" value="2"> Bill Russel
+                <br>
+                <input name="q4" type="radio" value="3"> Magic Johnson
+                <br>
+                <input name="q4" type="radio" value="4"> Oscar Robertson
+            </ol>
+        </ol>
+        <hr>
+        <label>5. Quel est le record de rebonds sur un match ?</label>
+        <ol>
+            <ol>
+                <input name="q5" type="radio" value="1"required> 40
+                <br>
+                <input name="q5" type="radio" value="2"> 55
+                <br>
+                <input name="q5" type="radio" value="3"> 63
+                <br>
+                <input name="q5" type="radio" value="4"> 70
+            </ol>
+        </ol>
+        <hr>
+        <label>6. Quel joueur ne faisait pas partie de la Dream Team I ?</label>
+        <ol>
+            <ol>
+                <input name="q6" type="radio" value="1" required> Shaquille O'Neal
+                <br>
+                <input name="q6" type="radio" value="2"> Chris Mullinl
+                <br>
+                <input name="q6" type="radio" value="3"> Christian Laettner
+                <br>
+                <input name="q6" type="radio" value="4"> Clyde Drexler
+            </ol>
+        </ol>
+        <hr>
+        <label>7. Qui est surnommé "The Dream" ?</label>
+        <ol>
+            <ol>
+                <input name="q7" type="radio" value="1" required> Michael Jordan
+                <br>
+                <input name="q7" type="radio" value="2"> Karl Malone
+                <br>
+                <input name="q7" type="radio" value="3"> Hakeem Olajuwon
+                <br>
+                <input name="q7" type="radio" value="4"> Charles Barkley
+            </ol>
+        </ol>
+        <hr>
+        <label>8. Qui possède le record de paniers à 3 points réussis sur une carrière ?</label>
+        <ol>
+            <ol>
+                <input name="q8" type="radio" value="1" required> Danny Ainge
+                <br>
+                <input name="q8" type="radio" value="2"> Dale Ellis
+                <br>
+                <input name="q8" type="radio" value="3"> Larry Bird
+                <br>
+                <input name="q8" type="radio" value="4"> Dennis Scott
+            </ol>
+        </ol>
+        <hr>
+        <label>9. Quel numéro portait Isiah Thomas ?</label>
+        <ol>
+            <ol>
+                <input name="q9" type="radio" value="1" required> 17
+                <br>
+                <input name="q9" type="radio" value="2"> 33
+                <br>
+                <input name="q9" type="radio" value="3"> 1
+                <br>
+                <input name="q9" type="radio" value="4"> 11
+            </ol>
+        </ol>
+        <hr>
+        <label>10. Qui est David Stern ?</label>
+        <ol>
+            <ol>
+                <input name="q10" type="radio" value="1" required> Le seul français ayant joué en NBA
+                <br>
+                <input name="q10" type="radio" value="2"> L'entraineur mythique des Celtics
+                <br>
+                <input name="q10" type="radio" value="3"> Le "big boss" de la NBA
+                <br>
+                <input name="q10" type="radio" value="4"> Le plus grand joueur par la taille ayant joué en NBA
+            </ol>
+        </ol>
+        <br>
+        <fieldset>
+            <button name="submit" type="submit" id="quiz-submit" data-submit="...Sending">Valider</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
